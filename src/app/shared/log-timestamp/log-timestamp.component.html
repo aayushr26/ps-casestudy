@@ -1,0 +1,14 @@
+<div class="div1">
+    <h1>Log timeStamp</h1>    
+    <ng-container *ngIf="currentUrl =='/countdown-timer'">
+        <div *ngFor="let item of log">
+        <h5>{{item.status}} at <span>{{item.newDate | date :'medium'}}</span></h5>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="currentUrl =='/timer-only'">
+        <div *ngFor="let item of mylogs">
+        <h5>{{item.status}} at <span>{{item.newDate | date :'medium'}}</span></h5>
+        </div>        
+    </ng-container>
+</div>

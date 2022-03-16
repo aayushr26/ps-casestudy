@@ -1,0 +1,14 @@
+
+
+<div class="div1">
+    <h1>Enter Input Timer</h1>
+    <input id ="myId" type="text" #ref [formControl]="inputField">
+   
+    <button *ngIf="toggle" (click)="startTimer(ref.value)">Start</button>
+    <button *ngIf="!toggle" (click)="pauseTimer()">Pause</button>
+    <button (click)="resetTimer()">Reset</button>
+
+    <div *ngFor="let pause  of pausingArray">
+        <p> Paused at {{pause}} </p>
+    </div>
+</div>

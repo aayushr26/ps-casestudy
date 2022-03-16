@@ -1,0 +1,11 @@
+ <div class="main" #scrollframe>
+   <div class="div1" *ngFor="let item of items, let i = index" #item>
+     <button class="myClass" (click)="alertFunction(i+1)">click {{item}}</button>
+   </div>
+ </div>
+
+ <!-- <div class="frame" (scroll)="scrolled($event)" #scrollframe>
+    <div *ngFor="let item of items" class="item" #item>
+      Item
+    </div>
+  </div> -->

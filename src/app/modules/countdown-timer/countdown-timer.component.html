@@ -1,0 +1,10 @@
+<div class="div-group">
+  <app-display-countdown [timer]="time"></app-display-countdown>
+  <app-input-timer (displayTime)="displayTimer($event)" (countStart)="startCount($event)" 
+  (countPause)="pauseCount($event)"
+  (logsSet)="setLogs($event)"
+  ></app-input-timer>
+  <app-log-timestamp [log]="logs"></app-log-timestamp>
+  <app-count-start-pause [startCount]="countStart" [pauseCount]="countPause"></app-count-start-pause>
+
+</div>

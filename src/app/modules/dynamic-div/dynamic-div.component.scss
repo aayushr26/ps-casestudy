@@ -1,0 +1,20 @@
+
+.main{
+    width: 90%;
+    margin: auto;
+    min-height: 700px;
+}
+.div1{
+    width: 200px;
+    height:200px;
+    border: 1px solid black;
+    position: relative;
+    top: 10px;
+    float: left;
+}
+
+.myClass{
+    position: absolute;
+    top: 40%;
+    left: 36%;
+}

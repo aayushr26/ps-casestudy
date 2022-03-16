@@ -1,0 +1,16 @@
+<table id="customers" class="sortable">
+    <tr>
+      <th (click)="sorting('name',1)">Name</th>
+      <th (click)="sorting('class',2)">Class</th>
+      <th (click)="sorting('sub1',3)">Sub1</th>
+      <th (click)="sorting('sub2',4)">Sub2</th>
+      <th (click)="sorting('sub3',5)">Sub3</th>
+    </tr>
+    <tr *ngFor="let item of studentData">
+      <td>{{item?.name}}</td>
+      <td>{{item?.class}}</td>
+      <td>{{item?.sub1}}</td>
+      <td>{{item?.sub2}}</td>
+      <td>{{item?.sub3}}</td>
+    </tr>
+  </table>
